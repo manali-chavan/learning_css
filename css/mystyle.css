@@ -192,6 +192,79 @@
             border: 3px solid black;
             height: 300px;
             width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 4s ease-out;
+            font-size: 30px;
+
         }
+        /*.box11{
+            transform: scale(0.5);
+        }*/
+        .box11:hover{
+            transform: translate(125px,125px);
+            
+        }
+        .box22:hover{
+            transform: translateX(250px);
+        }
+        .box33:hover{
+            transform: translateY(125px);
+        }
+        .box44:hover{
+            transform: scale(0.5);
+        }
+        .box55:hover{
+            transform: rotate(50deg);
+        }
+        .box66:hover{
+            transform: skewX(20deg);
+        }
+        .box77:hover{
+            transform: skewY(20deg);
+        }
+        .box88:hover{
+            transform: skew(20deg,20deg);
+        }
+        .box99:hover{
+            transform: scale(1.2) rotate(90deg) translateX(100px);
+        }
+        .img-wrapper{
+            height: 230px;
+            width: 200px;
+            border: 4px solid red;
+            position: relative;
+            overflow: hidden;
+            transition: transform 6s ease;
+           
+        }
+        .inner-img:hover{
+            transform: scale(2);
+            height: 300px;
+            width: 300px;
+            transform: rotate(90deg);
+            
+        }
+        .simple_animation{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            position: relative;
+            animation: myfirstanimation;
+            -webkit-animation: myfirstanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+            animation-delay: 1s;
+        }
+        @keyframes myfirstanimation{
+            0%{background-color: yellow;left: 0px;top: 0px}
+            25%{background-color: red;left: 300px;top: 0px}
+            50%{background-color: blue;left: 300px;top: 300px}
+            75%{background-color: grey;left: 0px;top: 300px}
+            100%{background-color: yellow;left: 0px;top: 0px}
+        }
+
 
     
